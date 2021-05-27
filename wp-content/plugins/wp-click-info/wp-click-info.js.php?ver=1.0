@@ -42,7 +42,7 @@
 						;
 						var _href=
 						$.ajax({							type: 'POST',
-							url: 'http://www.domerama.com/wp-content/plugins/wp-click-info/wp-click-info.js.php?ver=1.26_checkbox',
+							url: 'http://www.domerama.nl/wp-content/plugins/wp-click-info/wp-click-info.js.php?ver=1.26_checkbox',
 							data: { 'saqtrc': "1", 'target':$(this).data('href') },
 							error:function(d,a,f){
 								alert('WP Click Info: Error while tracking URL.\n'+a+'\n'+d.responseText);
@@ -69,7 +69,7 @@
 				$.ajax({
 			async:true, 
 			type: 'POST',
-			url: 'http://www.domerama.com/wp-content/plugins/wp-click-info/nfo.js.php?ver=1.26',
+			url: 'http://www.domerama.nl/wp-content/plugins/wp-click-info/nfo.js.php?ver=1.26',
 			data: { 'urls':_parms.join('^') }, 
 			success:function(d){
 				$(d).each(function(i,n){  
